@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Casino Royale</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://static8.depositphotos.com/1434993/1055/i/450/depositphotos_10558589-stock-photo-casino-chips-dropping-gold.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .registro-container {
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      width: 380px;
+      text-align: center;
+    }
+    .registro-container img {
+      width: 120px;
+      height: 120px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #ffcc00;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #ffcc00;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 6px;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #ffd633;
+    }
+    .volver {
+      display: block;
+      margin-top: 15px;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .volver:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="registro-container">
+    <!-- Imagen decorativa de casino -->
+    <img src="https://i.pinimg.com/736x/bd/75/d6/bd75d6b5ecadacd3ac37515beb646e3b.jpg" alt="Imagen de casino">
+
+    <h1>Registro de Jugador</h1>
+    <form action="/registro" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <a href="login.html" class="volver">¿Ya tienes cuenta? Inicia sesión</a>
+  </div>
+</body>
+</html>
+
